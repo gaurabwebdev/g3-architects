@@ -1,0 +1,75 @@
+/* Google Font Link */
+
+/* font-family: 'Work Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+
+/* General CSS */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-color: rgba(255, 144, 14, 0.1);
+    --one-color: #FF900E;
+    --hcolor: #131313;
+    --fcolor: #727272;
+    --fcolor-two: #424242;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--fcolor);
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--hcolor);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header CSS */
+header{
+    background: var(--bg-color);
+}
+
+
+.header-section {
+    width: 76%;
+    margin: auto;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text{
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    color: var(--hcolor);
+}
+
+ul.menu {
+    display: flex;
+    gap: 2.25rem;
+}
+
+li.menu-items {
+    list-style: none;
+}
+
+a.menu-links{
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--fcolor-two);
+}
+
+
