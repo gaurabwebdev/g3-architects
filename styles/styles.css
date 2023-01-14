@@ -225,6 +225,10 @@ section.fact-section {
     padding-left: 0;
 }
 
+section.fact-section p {
+    width: 50%;
+}
+
 .facts-container {
     margin: 6.25rem 0 12rem 0;
     display: grid;
@@ -387,6 +391,10 @@ footer.footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    section.fact-section p {
+        width: 70%;
+    }
+
     .sponsor-img-container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -418,11 +426,15 @@ footer.footer {
         flex-direction: column;
         text-align: center;
     }
+
+    section.fact-section p {
+        width: 90%;
+    }
 }
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
     h2.hero-title, .feature-title, .fact-section h4, .sponsor-text h4 {
         font-size: 2rem;
         line-height: 2.5rem;
