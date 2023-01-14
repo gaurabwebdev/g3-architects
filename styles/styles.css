@@ -163,7 +163,7 @@ section.feature-section {
     gap: 3rem;
 }
 
-.feature-title {
+.feature-title, .fact-section h4 {
     font-weight: 700;
     font-size: 3rem;
     line-height: 3.5rem;
@@ -187,6 +187,10 @@ p.feature-text {
     margin-bottom: 1rem;
 }
 
+.feature-img-container {
+    position: relative;
+}
+
 .exp-box {
     width: 40%;
     padding: 2rem;
@@ -206,4 +210,95 @@ p.feature-text {
     font-size: 3.5rem;
     line-height: 4.25rem;
     color: #fff;
+}
+
+
+section.fact-section {
+    width: 75%;
+    margin: auto;
+}
+
+.fact-section h4{
+    border: none !important;
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+}
+
+.facts-container {
+    margin: 6.25rem 0 12rem 0;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fact {
+    padding: 2.50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--one-color);
+    border-radius: 5px;
+}
+
+.fact h5 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+
+.fact span {
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+/* Sponsor Section CSS */
+section.sponsor-section {
+    width: 78%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 8rem;
+}
+
+.sponsor-text {
+    text-align: center;
+    width: 60%;
+}
+
+.sponsor-text h4 {
+    font-weight: 700;
+    font-size: 2.75rem;
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.sponsor-img-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+
+.sponsor-img-container {
+    display: grid;  
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4rem;
+    justify-items: center;
+}
+
+.sponsor-img-container img {
+    filter: grayscale(1);
+    width: 150px;
+}
+
+/* Footer CSS */
+footer.footer {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    background-color: var(--bg-color);
 }
