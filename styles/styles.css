@@ -23,6 +23,8 @@
 body{
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
     color: var(--fcolor);
 }
 
@@ -34,13 +36,24 @@ a{
     text-decoration: none;
 }
 
+.common-btn{
+    padding: 1.25rem;
+    background: #FF900E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+}
+
 /* Header CSS */
-header{
+header.header{
     background: var(--bg-color);
 }
 
-
-.header-section {
+/* , .hero-area */
+.header-section, .hero-area {
     width: 76%;
     margin: auto;
     padding: 3rem 0;
@@ -48,6 +61,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
 
 .logo-text{
     font-weight: 700;
@@ -72,4 +86,71 @@ a.menu-links{
     color: var(--fcolor-two);
 }
 
+/* Hero Area CSS */
+.hero-area{
+    flex-direction: column !important;
+    width: 75% !important;
+    justify-content: center !important;
+    text-align: center;
+    gap: 3rem;
+}
 
+
+.hero-text-container {
+    width: 60%;
+}
+
+h2.hero-title{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.75rem;
+}
+
+
+p.hero-text {
+    margin: 2rem 0;
+}
+
+.hero-img-container img {
+    width: 100%;
+}
+
+/* Team Section CSS */
+section.team-section {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5.25rem;
+}
+
+.team-image-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.team-image-container img {
+    width: 20rem;
+    height: 20rem;
+}
+
+h3.team-title{
+    font-weight: 700;
+    font-size: 2.75rem;
+    line-height: 3.25rem;
+}
+
+span.title-span {
+    font-weight: 500;
+    color: var(--fcolor);
+}
+
+.title-span2{
+    color: var(--one-color);
+}
+
+p.team.text {
+    margin: 2rem 0;
+}
