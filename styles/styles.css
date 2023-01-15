@@ -487,7 +487,13 @@ footer.footer {
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) { 
+
+    a.menu-links {
+        font-size: 0.90rem;
+    }
+
+
     h2.hero-title, .feature-title, .fact-section h4, .sponsor-text h4 {
         font-size: 2rem;
         line-height: 2.5rem;
@@ -501,10 +507,18 @@ footer.footer {
         font-size: 1.5rem;
     }
 
+    .feature-img-container img {
+        width: 23rem;
+    }
+
+    .exp-box {
+        width: 50%;
+    }
+    
     .exp-box h3 {
         font-size: 2rem;
     }
-
+    
     .facts-container {
         grid-template-columns: repeat(1, 1fr);
     }
